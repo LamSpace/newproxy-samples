@@ -1,0 +1,95 @@
+# JMH version: 1.37
+# VM version: JDK 1.8.0_291, Java HotSpot(TM) 64-Bit Server VM, 25.291-b10
+# VM invoker: D:\Program Files\Java\jdk1.8.0_291\jre\bin\java.exe
+# VM options: -javaagent:D:\Program Files (x86)\JetBrains Programs\IntelliJ IDEA Ultimate\lib\idea_rt.jar=57594:D:\Program Files (x86)\JetBrains Programs\IntelliJ IDEA Ultimate\bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.lamspace.newproxy.benchmark.BenchmarkOnInvocationForClass.addOnCglib
+
+# Run progress: 0.00% complete, ETA 00:06:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.008 us/op
+# Warmup Iteration   2: 0.007 us/op
+# Warmup Iteration   3: 0.007 us/op
+# Warmup Iteration   4: 0.007 us/op
+# Warmup Iteration   5: 0.007 us/op
+# Warmup Iteration   6: 0.007 us/op
+# Warmup Iteration   7: 0.007 us/op
+# Warmup Iteration   8: 0.007 us/op
+# Warmup Iteration   9: 0.007 us/op
+# Warmup Iteration  10: 0.007 us/op
+Iteration   1: 0.007 us/op
+Iteration   2: 0.007 us/op
+Iteration   3: 0.007 us/op
+Iteration   4: 0.007 us/op
+Iteration   5: 0.007 us/op
+Iteration   6: 0.007 us/op
+Iteration   7: 0.007 us/op
+Iteration   8: 0.007 us/op
+Iteration   9: 0.007 us/op
+Iteration  10: 0.007 us/op
+
+
+Result "io.github.lamspace.newproxy.benchmark.BenchmarkOnInvocationForClass.addOnCglib":
+  0.007 ±(99.9%) 0.001 us/op [Average]
+  (min, avg, max) = (0.007, 0.007, 0.007), stdev = 0.001
+  CI (99.9%): [0.007, 0.007] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 1.8.0_291, Java HotSpot(TM) 64-Bit Server VM, 25.291-b10
+# VM invoker: D:\Program Files\Java\jdk1.8.0_291\jre\bin\java.exe
+# VM options: -javaagent:D:\Program Files (x86)\JetBrains Programs\IntelliJ IDEA Ultimate\lib\idea_rt.jar=57594:D:\Program Files (x86)\JetBrains Programs\IntelliJ IDEA Ultimate\bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.lamspace.newproxy.benchmark.BenchmarkOnInvocationForClass.addOnNewProxy
+
+# Run progress: 50.00% complete, ETA 00:03:21
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.004 us/op
+# Warmup Iteration   2: 0.004 us/op
+# Warmup Iteration   3: 0.004 us/op
+# Warmup Iteration   4: 0.004 us/op
+# Warmup Iteration   5: 0.004 us/op
+# Warmup Iteration   6: 0.004 us/op
+# Warmup Iteration   7: 0.004 us/op
+# Warmup Iteration   8: 0.004 us/op
+# Warmup Iteration   9: 0.004 us/op
+# Warmup Iteration  10: 0.004 us/op
+Iteration   1: 0.004 us/op
+Iteration   2: 0.004 us/op
+Iteration   3: 0.004 us/op
+Iteration   4: 0.004 us/op
+Iteration   5: 0.004 us/op
+Iteration   6: 0.004 us/op
+Iteration   7: 0.004 us/op
+Iteration   8: 0.004 us/op
+Iteration   9: 0.004 us/op
+Iteration  10: 0.004 us/op
+
+
+Result "io.github.lamspace.newproxy.benchmark.BenchmarkOnInvocationForClass.addOnNewProxy":
+  0.004 ±(99.9%) 0.001 us/op [Average]
+  (min, avg, max) = (0.004, 0.004, 0.004), stdev = 0.001
+  CI (99.9%): [0.004, 0.004] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:06:42
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                    Mode  Cnt  Score    Error  Units
+BenchmarkOnInvocationForClass.addOnCglib     avgt   10  0.007 ±  0.001  us/op
+BenchmarkOnInvocationForClass.addOnNewProxy  avgt   10  0.004 ±  0.001  us/op

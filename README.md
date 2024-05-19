@@ -1,2 +1,2 @@
-# NewProxy-Samples
+# NewProxy Samples
 

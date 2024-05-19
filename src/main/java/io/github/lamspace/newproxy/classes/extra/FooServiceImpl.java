@@ -14,14 +14,20 @@
  * limitations under the License.
  */
 
-package io.github.lamspace.newproxy.benchmark;
+package io.github.lamspace.newproxy.classes.extra;
 
-/*
- * This package contains several benchmark related files, with {@code Proxy}, {@code NewProxy}, and {@code CGLIB}
- * as benchmark objects, and conducts comparative testing around dynamic proxy class generation time, method calls time,
- * runtime object size, and other aspects.
- *
- * @author Lam Tong
- * @version 1.0.0
- * @since 1.0.0
- */
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class FooServiceImpl implements FooService{
+
+    private static final Logger logger = Logger.getLogger(FooServiceImpl.class.getName());
+
+    @Override
+    public void foo() {
+        if (logger.isLoggable(Level.INFO)){
+            logger.log(Level.INFO, "foo() called");
+        }
+    }
+
+}

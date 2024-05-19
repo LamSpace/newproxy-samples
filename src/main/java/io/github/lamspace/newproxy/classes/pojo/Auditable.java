@@ -14,14 +14,33 @@
  * limitations under the License.
  */
 
-package io.github.lamspace.newproxy.benchmark;
+package io.github.lamspace.newproxy.classes.pojo;
 
-/*
- * This package contains several benchmark related files, with {@code Proxy}, {@code NewProxy}, and {@code CGLIB}
- * as benchmark objects, and conducts comparative testing around dynamic proxy class generation time, method calls time,
- * runtime object size, and other aspects.
+import java.time.LocalDateTime;
+
+/**
+ * An {@code auditable} interface for dynamic proxy class demonstration.
  *
  * @author Lam Tong
  * @version 1.0.0
  * @since 1.0.0
  */
+public interface Auditable {
+
+    void setCreatedBy(String createdBy);
+
+    void setUpdateBy(String updateBy);
+
+    void setCreateAt(LocalDateTime createAt);
+
+    void setUpdateAt(LocalDateTime updateAt);
+
+    String getCreatedBy();
+
+    String getUpdateBy();
+
+    LocalDateTime getCreateAt();
+
+    LocalDateTime getUpdateAt();
+
+}

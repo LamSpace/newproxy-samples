@@ -14,14 +14,9 @@
  * limitations under the License.
  */
 
-package io.github.lamspace.newproxy.benchmark;
 
-/*
- * This package contains several benchmark related files, with {@code Proxy}, {@code NewProxy}, and {@code CGLIB}
- * as benchmark objects, and conducts comparative testing around dynamic proxy class generation time, method calls time,
- * runtime object size, and other aspects.
- *
- * @author Lam Tong
- * @version 1.0.0
- * @since 1.0.0
- */
+package io.github.lamspace.newproxy.classes;
+
+@Testable
+public class TestSample {
+}

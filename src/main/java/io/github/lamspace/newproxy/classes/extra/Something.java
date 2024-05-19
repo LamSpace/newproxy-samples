@@ -14,14 +14,35 @@
  * limitations under the License.
  */
 
-package io.github.lamspace.newproxy.benchmark;
+package io.github.lamspace.newproxy.classes.extra;
 
-/*
- * This package contains several benchmark related files, with {@code Proxy}, {@code NewProxy}, and {@code CGLIB}
- * as benchmark objects, and conducts comparative testing around dynamic proxy class generation time, method calls time,
- * runtime object size, and other aspects.
- *
- * @author Lam Tong
- * @version 1.0.0
- * @since 1.0.0
- */
+public class Something {
+
+    private final String s;
+
+    private final int x;
+
+    public Something() {
+        this.s = "Hello, World";
+        this.x = 1;
+    }
+
+    public Something(String s) {
+        this.s = s;
+        this.x = 1;
+    }
+
+    public Something(String s, int x) {
+        this.s = s;
+        this.x = x;
+    }
+
+    public String repeat() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < x; i++) {
+            sb.append(s).append(i == x - 1 ? "" : " -> ");
+        }
+        return sb.toString();
+    }
+
+}

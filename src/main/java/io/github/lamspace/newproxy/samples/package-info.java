@@ -17,7 +17,7 @@
 package io.github.lamspace.newproxy.samples;
 
 /*
- * This package demonstrates usage of {@code NewProxy} to generate dynamic proxy class for interfaces and class.
+ * This package demonstrates the usage of {@code NewProxy} to generate dynamic proxy class for interfaces and class.
  *
  * @author Lam Tong
  * @version 1.0.0
