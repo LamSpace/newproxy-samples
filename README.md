@@ -8,28 +8,28 @@ From that, we may infer that
 
 * In terms of proxy class generation time, `Proxy` is the best, followed by `CGLIB`, and `NewProxy` is the worst.
 
-![](./pic/proxyClassGenerationTime.png)
+![](https://github.com/LamSpace/newproxy-samples/blob/master/pic/sizeOfGeneratedProxyClassFile.png)
 
 * In terms of proxy method invocation time for interfaces, `NewProxy(MethodHandle)` is a little bit better than any
   other approaches.
 
-![](./pic/methodInvocationTimeForInterfaces.png)
+![](https://github.com/LamSpace/newproxy-samples/blob/master/pic/methodInvocationTimeForInterfaces.png)
 
 * In terms of proxy method invocation time for class, `NewProxy` is better than `CGLIB`, and `Proxy` does not support
   this feature.
 
-![](./pic/methodInvocationTimeForClass.png)
+![](https://github.com/LamSpace/newproxy-samples/blob/master/pic/methodInvocationTimeForClass.png)
 
 * In terms of generated proxy class file, `Proxy` has the smallest size, followed by `NewProxy`, and `CGLIB` has the
   biggest size, since `CGLIB` generates a proxy class file with corresponding **FastClass**
   index.
 
-![](./pic/sizeOfGeneratedProxyClassFile.png)
+![](https://github.com/LamSpace/newproxy-samples/blob/master/pic/sizeOfGeneratedProxyClassFile.png)
 
 * In terms of runtime proxy instance, `Proxy` has the smallest size, followed by `CGLIB`, and `NewProxy` has the
   biggest size.
 
-![](./pic/sizeOfRuntimeProxyInstance.png)
+![](https://github.com/LamSpace/newproxy-samples/blob/master/pic/sizeOfRuntimeProxyInstance.png)
 
 * In terms of the complexity of the proxy, `Proxy` generates the clearest proxy class, followed by `NewProxy`,
   and `CGLIB` generates the most complex proxy class (generated proxy classes can be dumped,
