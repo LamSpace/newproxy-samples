@@ -8,7 +8,7 @@ From that, we may infer that
 
 * In terms of proxy class generation time, `Proxy` is the best, followed by `CGLIB`, and `NewProxy` is the worst.
 
-![](/pic/proxyClassGenerationTime.png)
+<img src="pic/proxyClassGenerationTime.png">
 
 * In terms of proxy method invocation time for interfaces, `NewProxy(MethodHandle)` is a little bit better than any
   other approaches.
