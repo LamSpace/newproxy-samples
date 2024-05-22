@@ -19,4 +19,85 @@ package io.github.lamspace.newproxy.classes;
 
 @Testable
 public class TestSample {
+
+    public int add1(int x, int y) {
+        return x + y;
+    }
+
+    public int add2(int x, int y) {
+        return x + y;
+    }
+
+    public int add3(int x, int y) {
+        return x + y;
+    }
+
+    public int add4(int x, int y) {
+        return x + y;
+    }
+
+    public int add5(int x, int y) {
+        return x + y;
+    }
+
+    public int add6(int x, int y) {
+        return x + y;
+    }
+
+    public int add7(int x, int y) {
+        return x + y;
+    }
+
+    public int add8(int x, int y) {
+        return x + y;
+    }
+
+    public int add9(int x, int y) {
+        return x + y;
+    }
+
+    public int add10(int x, int y) {
+        return x + y;
+    }
+
+    public int add11(int x, int y) {
+        return x + y;
+    }
+
+    public int add12(int x, int y) {
+        return x + y;
+    }
+
+    public int add13(int x, int y) {
+        return x + y;
+    }
+
+    public int add14(int x, int y) {
+        return x + y;
+    }
+
+    public int add15(int x, int y) {
+        return x + y;
+    }
+
+    public int add16(int x, int y) {
+        return x + y;
+    }
+
+    public int add17(int x, int y) {
+        return x + y;
+    }
+
+    public int add18(int x, int y) {
+        return x + y;
+    }
+
+    public int add19(int x, int y) {
+        return x + y;
+    }
+
+    public int add20(int x, int y) {
+        return x + y;
+    }
+
 }
